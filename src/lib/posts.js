@@ -1,4 +1,4 @@
-const POST_URL = "https://springgreen-eland-136824.hostingersite.com";
+const POST_URL = process.env.NEXT_PUBLIC_POST_URL;
 
 export async function getPosts(page = 1, perPage = 10) {
   // This function would typically fetch posts from an API or database
